@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0038a8 33%, #ce1126 66%, #fcd116 100%);
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  header .banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  header .banner p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Profile Section */
+  .profile {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  
+  .profile-container {
+    text-align: center;
+  }
+  
+  .profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #fcd116;
+  }
+  
+  .profile-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #fcd116;
+  }
+  
+  .profile-header .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .details p, .details ul {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .details ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+  
+  .details p strong {
+    color: #fcd116;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-container {
+      padding: 1rem;
+    }
+  
+    header .banner h1 {
+      font-size: 2rem;
+    }
+  }

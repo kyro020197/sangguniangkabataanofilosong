@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #0038A8, #CE1126, #FFD700);
+    background-size: 300% 300%;
+    animation: flagColors 6s infinite ease-in-out;
+    color: white;
+}
+
+    @keyframes flagColors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header */
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b3b3b3;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+header nav a.highlight {
+    color: white;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 18px;
+    color: #b3b3b3;
+}
+
+/* Officials Section */
+.officials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    padding: 20px 40px;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+.logo-profile {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it circular */
+    margin-bottom: 20px; /* Adds space below the logo */
+    background-color: #4b4b4b; /* Placeholder background color */
+    object-fit: cover; /* Ensures the logo fits well */
+}
+
+/* Facebook logo styling */
+.social-logo {
+    width: 30px; /* Logo size */
+    height: 30px;
+    margin-top: 10px; /* Space above the logo */
+    display: inline-block;
+}
+
+
+footer ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0; /* Add spacing between list items */
+}
+
+footer ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #b3b3b3; /* Default link color */
+    font-size: 14px;
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+footer ul li a:hover {
+    color: white; /* Change color on hover */
+}
+
+.profile-card {
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Circular profile pictures */
+    object-fit: cover;
+}
+
+.profile-card h3 a {
+    text-decoration: none; /* Remove underline from names */
+    color: #fff; /* Default color for names */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+.profile-card h3 a:hover {
+    color: #00bfff; /* Change color on hover */
+}
+
+.card h3 a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the color consistent with surrounding text */
+}
+
+/* Leadership Background Animation */
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #00264d, #005f99);
+    z-index: -1;
+  }
+  
+  .background .arrow {
+    position: absolute;
+    bottom: -10%;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #fcd116, #ce1126);
+    clip-path: polygon(50% 0%, 100% 100%, 50% 75%, 0% 100%);
+    animation: rise 4s infinite ease-in-out;
+    opacity: 0.8;
+  }
+  
+  .background .arrow:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .background .arrow:nth-child(2) {
+    left: 30%;
+    animation-delay: 0.5s;
+  }
+  
+  .background .arrow:nth-child(3) {
+    left: 50%;
+    animation-delay: 1s;
+  }
+  
+  .background .arrow:nth-child(4) {
+    left: 70%;
+    animation-delay: 1.5s;
+  }
+  
+  .background .arrow:nth-child(5) {
+    left: 90%;
+    animation-delay: 2s;
+  }
+  
+  /* Rising Animation */
+  @keyframes rise {
+    0% {
+      transform: translateY(100vh) scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(50vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) scale(0.8);
+      opacity: 0;
+    }
+  }

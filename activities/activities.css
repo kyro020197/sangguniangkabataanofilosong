@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: repeating-linear-gradient(
+        45deg,
+        blue,
+        blue 33.33%,
+        red 33.33%,
+        red 66.66%,
+        yellow 66.66%,
+        yellow 100%
+    );
+    color: #333;
+    background-size: 200% 200%;
+    animation: backgroundMove 10s linear infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1.5em;
+}
+
+.activity {
+    width: 90%;
+    max-width: 700px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.activity:hover {
+    transform: scale(1.02);
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    padding: 1em;
+    text-align: center;
+}
+
+.description h2 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    color: #2575fc;
+}
+
+.description p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
